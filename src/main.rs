@@ -1,5 +1,17 @@
 fn main() {
-    vertofor();
+    let list = vec![10, 20, 30, 80, 90, 77];
+    println!("{}", find_avg(&list));
+}
+
+fn find_avg(l: &Vec<i32>) -> f64 {
+    let mut sum = 0;
+    for el in l {
+        sum += el
+    }
+    let lenth = (l.len()) as f64;
+
+    let sum = sum as f64;
+    sum/lenth
 }
 
 fn vertofor() {
